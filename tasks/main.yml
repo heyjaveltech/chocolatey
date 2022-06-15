@@ -10,7 +10,7 @@
   changed_when: false
 
 - set_fact:
-    choco_location: "{{ programData_out.stdout | trim + '\\chocolatey' }}"
+    choco_location: "{{ programData_out.stdout + 'chocolatey' }}"
 
 - set_fact:
     temp_location: '{{ temp_out.stdout | trim }}'
